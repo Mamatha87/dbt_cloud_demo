@@ -1,4 +1,3 @@
-
 version: 2
 
 models:
@@ -19,7 +18,11 @@ models:
             tests:
                 - unique
                 - not_null
+<<<<<<< HEAD
     - name: stg_Name1
+=======
+    - name: stg_Name
+>>>>>>> 51d7264f9c8b1f6a12e0942207259dbae6e2373b
       description: "stg dbt model"
       columns:
           - name: ID
@@ -39,5 +42,9 @@ models:
             tests:
               - not_null:
                   config:
+<<<<<<< HEAD
                     severity: error
  
+=======
+                    severity: error
+>>>>>>> 51d7264f9c8b1f6a12e0942207259dbae6e2373b
