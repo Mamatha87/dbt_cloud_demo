@@ -19,3 +19,24 @@ models:
             tests:
                 - unique
                 - not_null
+    - name: stg_Name
+      description: "stg dbt model"
+      columns:
+          - name: ID
+            description: Unique ID for each customer
+            tests:
+              - not_null:
+                  config:
+                    severity: error
+          - name: FIRST_NAME
+            description: first name for each customer
+            tests:
+              - not_null:
+                  config:
+                    severity: error
+          - name: LAST_NAME
+            description: last name for each customer
+            tests:
+              - not_null:
+                  config:
+                    severity: error
