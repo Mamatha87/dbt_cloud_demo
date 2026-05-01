@@ -1,5 +1,4 @@
 version: 2
-
 models:
     - name: my_first_dbt_model
       description: "A starter dbt model"
@@ -18,15 +17,7 @@ models:
             tests:
                 - unique
                 - not_null
-<<<<<<< HEAD
-    - name: stg_Name
-=======
-<<<<<<< HEAD
-    - name: stg_Name1
-=======
-    - name: stg_Name
->>>>>>> 51d7264f9c8b1f6a12e0942207259dbae6e2373b
->>>>>>> a5ece7af3647dd640d43d0cbff30acbded981a42
+    - name: stg_Name3
       description: "stg dbt model"
       columns:
           - name: ID
@@ -46,13 +37,4 @@ models:
             tests:
               - not_null:
                   config:
-<<<<<<< HEAD
                     severity: error
-=======
-<<<<<<< HEAD
-                    severity: error
- 
-=======
-                    severity: error
->>>>>>> 51d7264f9c8b1f6a12e0942207259dbae6e2373b
->>>>>>> a5ece7af3647dd640d43d0cbff30acbded981a42
