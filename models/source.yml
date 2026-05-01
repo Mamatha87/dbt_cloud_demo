@@ -7,8 +7,12 @@ sources:
 <<<<<<< HEAD
         description: Stores name information for an each account
 =======
+<<<<<<< HEAD
+        description: Stores name information for an each account
+=======
         description: Stores customer information for an each account
 >>>>>>> 51d7264f9c8b1f6a12e0942207259dbae6e2373b
+>>>>>>> a5ece7af3647dd640d43d0cbff30acbded981a42
         columns:
           - name: ID
             description: Unique ID for each customer
@@ -30,6 +34,10 @@ sources:
 <<<<<<< HEAD
                     severity: error
 =======
+<<<<<<< HEAD
+                    severity: error
+=======
                     severity: error
           
 >>>>>>> 51d7264f9c8b1f6a12e0942207259dbae6e2373b
+>>>>>>> a5ece7af3647dd640d43d0cbff30acbded981a42
