@@ -4,7 +4,11 @@ sources:
     schema: Trail
     tables:
       - name: NAME
+<<<<<<< HEAD
+        description: Stores name information for an each account
+=======
         description: Stores customer information for an each account
+>>>>>>> 51d7264f9c8b1f6a12e0942207259dbae6e2373b
         columns:
           - name: ID
             description: Unique ID for each customer
@@ -23,5 +27,9 @@ sources:
             tests:
               - not_null:
                   config:
+<<<<<<< HEAD
+                    severity: error
+=======
                     severity: error
           
+>>>>>>> 51d7264f9c8b1f6a12e0942207259dbae6e2373b
