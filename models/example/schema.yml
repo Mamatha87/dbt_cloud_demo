@@ -1,4 +1,3 @@
-
 version: 2
 
 models:
@@ -19,9 +18,9 @@ models:
             tests:
                 - unique
                 - not_null
-    
+
     - name: students
-      description: "students  model"
+      description: "students model"
       columns:
           - name: ID
             description: Unique ID for each customer
