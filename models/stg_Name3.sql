@@ -1,1 +1,0 @@
-select * from {{ source('snowflake_tables', 'Name') }}

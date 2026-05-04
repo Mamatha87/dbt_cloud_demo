@@ -1,10 +1,12 @@
+version: 2
+
 sources:
   - name: snowflake_tables
-    database: sample_database_raw
-    schema: Trail
+    database: University_raw
+    schema: Degree
     tables:
-      - name: NAME
-        description: Stores name information for an each account
+      - name: STUDENTS
+        description: Stores students information for an each account
         columns:
           - name: ID
             description: Unique ID for each customer
@@ -12,14 +14,14 @@ sources:
               - not_null:
                   config:
                     severity: error
-          - name: FIRST_NAME
-            description: first name for each customer
+          - name: NAME
+            description: name for each customer
             tests:
               - not_null:
                   config:
                     severity: error
-          - name: LAST_NAME
-            description: last name for each customer
+          - name: Branch
+            description: Branch for each customer
             tests:
               - not_null:
                   config:

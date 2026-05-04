@@ -1,4 +1,5 @@
 version: 2
+
 models:
     - name: my_first_dbt_model
       description: "A starter dbt model"
@@ -17,8 +18,9 @@ models:
             tests:
                 - unique
                 - not_null
-    - name: stg_Name3
-      description: "stg dbt model"
+
+    - name: students
+      description: "students model"
       columns:
           - name: ID
             description: Unique ID for each customer
@@ -26,14 +28,14 @@ models:
               - not_null:
                   config:
                     severity: error
-          - name: FIRST_NAME
-            description: first name for each customer
+          - name: NAME
+            description: name for each customer
             tests:
               - not_null:
                   config:
                     severity: error
-          - name: LAST_NAME
-            description: last name for each customer
+          - name: DEGREE
+            description: Degree for each customer
             tests:
               - not_null:
                   config:
