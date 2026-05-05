@@ -1,0 +1,28 @@
+version: 2
+
+sources:
+  - name: snowflake_tables
+    database: University_raw
+    schema: Degree
+    tables:
+      - name: STUDENTS
+        description: Stores students information for an each account
+        columns:
+          - name: ID
+            description: Unique ID for each customer
+            tests:
+              - not_null:
+                  config:
+                    severity: error
+          - name: NAME
+            description: name for each customer
+            tests:
+              - not_null:
+                  config:
+                    severity: error
+          - name: Branch
+            description: Branch for each customer
+            tests:
+              - not_null:
+                  config:
+                    severity: error
